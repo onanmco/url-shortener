@@ -1,12 +1,12 @@
 import { NestedStack } from "aws-cdk-lib";
 import { Deployment, IRestApi, IStage, LambdaIntegration, PassthroughBehavior, RestApi, Stage } from "aws-cdk-lib/aws-apigateway";
 import { HttpMethod } from "aws-cdk-lib/aws-events";
-import { IRole, ServicePrincipal } from "aws-cdk-lib/aws-iam";
+import { IRole } from "aws-cdk-lib/aws-iam";
 import { IFunction } from "aws-cdk-lib/aws-lambda";
 import { Construct } from "constructs";
-import { BaseNestedStackProps } from "../properties/BaseNestedStackProps";
-import path from "path";
 import dotenv from "dotenv";
+import path from "path";
+import { BaseNestedStackProps } from "../properties/BaseNestedStackProps";
 
 dotenv.config({
   path: path.resolve(__dirname, "../../.env")

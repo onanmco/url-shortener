@@ -6,7 +6,7 @@ import path from "path";
 import { LambdaStack } from './nested-stacks/lambda-stack';
 import { ApiStack } from './nested-stacks/api-stack';
 import { CfnOutput } from 'aws-cdk-lib';
-import { IamStack } from './iam-stack';
+import { IamStack } from './nested-stacks/iam-stack';
 
 dotenv.config({
   path: path.resolve(__dirname, "../.env")

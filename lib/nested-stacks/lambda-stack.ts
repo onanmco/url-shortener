@@ -1,10 +1,10 @@
 import { Duration, NestedStack } from "aws-cdk-lib";
-import { Architecture, IFunction, Runtime } from "aws-cdk-lib/aws-lambda";
-import { NodejsFunction, SourceMapMode } from "aws-cdk-lib/aws-lambda-nodejs";
-import { Construct } from "constructs";
-import { BaseNestedStackProps } from "../properties/BaseNestedStackProps";
-import path from "path";
 import { ITable } from "aws-cdk-lib/aws-dynamodb";
+import { Architecture, IFunction, Runtime } from "aws-cdk-lib/aws-lambda";
+import { NodejsFunction } from "aws-cdk-lib/aws-lambda-nodejs";
+import { Construct } from "constructs";
+import path from "path";
+import { BaseNestedStackProps } from "../properties/BaseNestedStackProps";
 
 interface LambdaStackProps extends BaseNestedStackProps {
   urlTable: ITable;

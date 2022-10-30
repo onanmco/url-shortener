@@ -1,7 +1,7 @@
 import { NestedStack } from "aws-cdk-lib";
 import { Effect, IRole, ManagedPolicy, PolicyStatement, Role, ServicePrincipal } from "aws-cdk-lib/aws-iam";
 import { Construct } from "constructs";
-import { BaseNestedStackProps } from "./properties/BaseNestedStackProps";
+import { BaseNestedStackProps } from "../properties/BaseNestedStackProps";
 
 interface ApiStackProps extends BaseNestedStackProps {}
 
