@@ -11,14 +11,29 @@
     "cdk": "cdk"
   },
   "devDependencies": {
+    "@middy/core": "^3.6.2",
+    "@middy/http-error-handler": "^3.6.2",
+    "@middy/http-json-body-parser": "^3.6.2",
+    "@types/aws-lambda": "^8.10.108",
+    "@types/aws-sdk": "^2.7.0",
     "@types/jest": "^27.5.2",
-    "@types/node": "10.17.27",
+    "@types/moment": "^2.13.0",
+    "@types/node": "^10.17.27",
     "@types/prettier": "2.6.0",
-    "jest": "^27.5.1",
-    "ts-jest": "^27.1.4",
+    "@types/uuid": "^8.3.4",
+    "@types/yup": "^0.32.0",
     "aws-cdk": "2.44.0",
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1243.0",
+    "dotenv": "^16.0.3",
+    "esbuild": "^0.15.12",
+    "jest": "^27.5.1",
+    "moment": "^2.29.4",
+    "ts-jest": "^27.1.4",
     "ts-node": "^10.9.1",
-    "typescript": "~3.9.7"
+    "typescript": "~3.9.7",
+    "uuid": "^9.0.0",
+    "yup": "^0.32.11"
   },
   "dependencies": {
     "aws-cdk-lib": "2.44.0",
