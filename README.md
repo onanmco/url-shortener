@@ -1,14 +1,15 @@
-# Welcome to your CDK TypeScript project
+# URL Shortener Service
 
-This is a blank project for CDK development with TypeScript.
+This project consist of the source codes of a CDK application that builds and deploys an URL shortener service in AWS using TypeScript, Lambda, API Gateway and DynamoDB.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Solution Diagram
 
-## Useful commands
+![image](https://user-images.githubusercontent.com/45673838/198887159-dc680118-a6d4-408e-80bf-1431668396e7.png)
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## Steps To Deploy the Application
+
+* Copy the .env.example file and rename as .env.
+* Fill in the environment variables regarding to your own AWS account information.
+* Run `npm i`
+* Run `cdk bootstrap`
+* Run `cdk deploy`
